@@ -41,7 +41,7 @@ async def help(c, m, cb=False):
 async def start(c, m, cb=False):
   
     button = [[
-        InlineKeyboardButton("My Owner', url=f'https://t.me/robo_glitch'),
+        InlineKeyboardButton('📢 ༒Uᴘᴅᴀᴛᴇs༒', url='https://t.me/hddubhub4u')
         InlineKeyboardButton(f'{ROBOT} About', callback_data='about')
         ],[
         InlineKeyboardButton(f'{INFORMATION} Help', callback_data="help"),
