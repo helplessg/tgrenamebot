@@ -50,13 +50,13 @@ async def start(c, m, cb=False):
     reply_markup = InlineKeyboardMarkup(button)
     if cb:
         await m.message.edit(
-            text=TEXT.START_TEXT.format(user_mention=m.from_user.mention, bot_owner=owner.mention(style="md")), 
+            text=TEXT.START_TEXT.format(user_mention=m.from_user.mention, 
             disable_web_page_preview=True,
             reply_markup=reply_markup
         )
     else:
         await m.reply_text(
-            text=TEXT.START_TEXT.format(user_mention=m.from_user.mention, bot_owner=owner.mention(style="md")), 
+            text=TEXT.START_TEXT.format(user_mention=m.from_user.mention,  
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             quote=True
